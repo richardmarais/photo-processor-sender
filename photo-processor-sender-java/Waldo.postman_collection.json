@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "73a2e2c0-6f6e-40ca-bbae-48c539e2ddcb",
+		"name": "Waldo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/photos/pending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/photos/pending",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"photos",
+						"pending"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/photos/process",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"7e0e9aa6-f1d0-4154-abe1-617faa64a5fe\",\"dcebdc77-6ddc-468e-978e-3714314a1abc\",\"b7428adb-6356-4fd6-9ed1-c298886d95e8\",\"9e24ec47-620b-4b93-833c-834a54d98ff8\",\"3ade07c3-5f45-4aac-8054-0132bc85880b\",\"33645c35-a001-4c2c-a6f4-e3b96d3dc974\"]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/photos/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"photos",
+						"process"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
